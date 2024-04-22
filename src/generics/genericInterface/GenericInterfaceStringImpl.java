@@ -11,4 +11,9 @@ public class GenericInterfaceStringImpl implements GenericInterface<String> {
     public String find() {
         return null;
     }
+
+    @Override
+    public String getSum() {
+        return null;
+    }
 }

@@ -13,4 +13,9 @@ public class GenericInterfaceImpl <T> implements GenericInterface <T> {
     public T find() {
         return null;
     }
+
+    @Override
+    public T getSum() {
+        return null;
+    }
 }

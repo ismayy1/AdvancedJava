@@ -6,4 +6,6 @@ public interface GenericInterface <T> {
 
     T find();
 
+    T getSum();
+
 }
