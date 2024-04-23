@@ -2,7 +2,7 @@ package generics.genericInterface.useCase;
 
 public class Student {
 
-    private int id;
+    private Integer id;
     private String name;
 
     public int getId() {
@@ -13,7 +13,7 @@ public class Student {
         return name;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
