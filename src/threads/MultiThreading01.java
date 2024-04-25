@@ -3,16 +3,24 @@ package threads;
 public class MultiThreading01 {
     public static void main(String[] args) {
 
-        Counter counter1 = new Counter("Sedat");
-        Counter counter2 = new Counter("Tevfik");
+//        long start = System.currentTimeMillis();
+//        Counter counter1 = new Counter("Sedat");
+//        Counter counter2 = new Counter("Tevfik");
 //        counter1.count();
 //        counter2.count();
+//        long finish = System.currentTimeMillis();
+//        System.out.println("Time duration in main thread: "+ (finish - start));
+
+        long start = System.currentTimeMillis();
 
         System.out.println("=========== multi Threading ===========");
         Thread thread1 = new ThreadCounter("Mikail");
         Thread thread2 = new ThreadCounter("Tamara");
         thread1.start();
         thread2.start();
+
+        long finish = System.currentTimeMillis();
+        System.out.println("Time duration in multi thread: "+ (finish - start));
 
     }
 }
