@@ -19,6 +19,13 @@ public class MultiThreading01 {
         thread1.start();
         thread2.start();
 
+        try {
+            thread1.join(); // thread (the thread which is running) will wait for thread1
+            thread2.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
         long finish = System.currentTimeMillis();
         System.out.println("Time duration in multi thread: "+ (finish - start));
 
