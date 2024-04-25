@@ -20,8 +20,8 @@ public class MultiThreading01 {
         thread2.start();
 
         try {
-            thread1.join(); // thread (the thread which is running) will wait for thread1
-            thread2.join();
+            thread1.join(); // main thread (the thread which is running) will wait for thread1
+            thread2.join(); // main thread (the thread which is running) will wait for thread2
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
