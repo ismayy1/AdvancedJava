@@ -2,7 +2,7 @@ package threads;
 
 public class MultiThreading02 {
 
-    public static int counterBoard = 0;
+    public volatile static int counterBoard = 0;
     public static void main(String[] args) {
 
         Thread thread1 = new Thread(new Runnable() {
