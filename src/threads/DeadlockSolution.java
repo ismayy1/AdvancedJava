@@ -18,7 +18,23 @@ public class DeadlockSolution {
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
-                    System.out.println(Thread.currentThread().getName() + " wants to use pencil");
+                    System.out.println(Thread.currentThread().getName() + " is using pencil");
+
+                    try {
+                        Thread.sleep(2000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+
+                    System.out.println(Thread.currentThread().getName() + " has finished using pencil");
+
+                    try {
+                        Thread.sleep(2000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+
+                    System.out.println(Thread.currentThread().getName() + " has finished using pencil");
 
                     synchronized (pencil) {
                         System.out.println(Thread.currentThread().getName() + " is using pencil");
