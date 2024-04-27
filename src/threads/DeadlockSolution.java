@@ -26,7 +26,7 @@ public class DeadlockSolution {
                         throw new RuntimeException(e);
                     }
 
-                    System.out.println(Thread.currentThread().getName() + " has finished using pencil");
+                    System.out.println(Thread.currentThread().getName() + " has finished using pencil, it's free");
 
                     try {
                         Thread.sleep(2000);
