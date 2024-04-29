@@ -48,6 +48,7 @@ public class ThreadPool {
         service.execute(thread10);
         service.execute(thread11);
 
+        // to shut down the Executor service after the tasks are finished executing
         service.shutdown();
 
     }
