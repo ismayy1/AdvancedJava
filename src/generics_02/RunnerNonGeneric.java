@@ -8,5 +8,12 @@ public class RunnerNonGeneric {
 
         NonGenericProduct laptop = new NonGenericProduct();
         laptop.setCode(123456);
+
+
+        String string = (String) book.getCode();
+        String string2 = (String) laptop.getCode();
+
+        System.out.println(string);
+        System.out.println(string2);
     }
 }
