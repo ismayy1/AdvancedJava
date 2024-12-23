@@ -10,5 +10,9 @@ public class RunnerGeneric {
         laptop.setCode(123456);
 
         String string = book.getCode();
+        System.out.println("string = " + string);
+
+        Integer integer = laptop.getCode();
+        System.out.println("integer = " + integer);
     }
 }
