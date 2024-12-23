@@ -11,7 +11,7 @@ public class RunnerNonGeneric {
 
 
         String string = (String) book.getCode();
-        String string2 = (String) laptop.getCode();
+        String string2 = (String) laptop.getCode(); //ClassCastException
 
         System.out.println(string);
         System.out.println(string2);
