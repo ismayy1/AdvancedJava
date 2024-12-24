@@ -4,20 +4,20 @@ import java.util.Arrays;
 
 public class GenericMethod {
 
-    public static void printArray(Integer[] array) {
-        Arrays.stream(array).forEach(t -> System.out.print(t + " "));
-        System.out.println();
-    }
-
-    public static void printArray(Double[] array) {
-        Arrays.stream(array).forEach(t -> System.out.print(t + " "));
-        System.out.println();
-    }
-
-    public static void printArray(String[] array) {
-        Arrays.stream(array).forEach(t -> System.out.print(t + " "));
-        System.out.println();
-    }
+//    public static void printArray(Integer[] array) {
+//        Arrays.stream(array).forEach(t -> System.out.print(t + " "));
+//        System.out.println();
+//    }
+//
+//    public static void printArray(Double[] array) {
+//        Arrays.stream(array).forEach(t -> System.out.print(t + " "));
+//        System.out.println();
+//    }
+//
+//    public static void printArray(String[] array) {
+//        Arrays.stream(array).forEach(t -> System.out.print(t + " "));
+//        System.out.println();
+//    }
 
     public static <T> void printArrayGeneric(T[] array) {
         Arrays.stream(array).forEach(t -> System.out.print(t + " "));
@@ -57,7 +57,6 @@ public class GenericMethod {
         System.out.println(getFirst(doubleArray));
 
         System.out.println("***************");
-
         printArrayAndElement(integerArray, getFirst(doubleArray));
     }
 }
