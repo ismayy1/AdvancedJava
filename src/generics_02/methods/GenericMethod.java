@@ -29,6 +29,18 @@ public class GenericMethod {
         return first;
     }
 
+    public static <T, U> void printArrayAndElement(T[] array, U element) {
+        Arrays.stream(array).forEach(t -> System.out.print(t + " "));
+        System.out.println();
+        System.out.println(element);
+    }
+
+    /*  // the first index is an object of type T, that's why we can't do the assignment
+        public static <T, U> void replaceFirstElement(T[] array, U element) {
+            array[0] = element;
+        }
+     */
+
     public static void main(String[] args) {
 
         String[] stringArray = {"Advanced", "Java", "is", "great"};
@@ -38,5 +50,14 @@ public class GenericMethod {
         printArrayGeneric(stringArray);
         printArrayGeneric(integerArray);
         printArrayGeneric(doubleArray);
+
+        System.out.println("***************");
+
+        System.out.println(getFirst(stringArray));
+        System.out.println(getFirst(doubleArray));
+
+        System.out.println("***************");
+
+        printArrayAndElement(integerArray, getFirst(doubleArray));
     }
 }
