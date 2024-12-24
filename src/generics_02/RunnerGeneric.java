@@ -1,5 +1,8 @@
 package generics_02;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class RunnerGeneric {
     public static void main(String[] args) {
 
@@ -14,5 +17,12 @@ public class RunnerGeneric {
 
         Integer integer = laptop.getCode();
         System.out.println("integer = " + integer);
+
+//        ArrayList<String> list = new ArrayList<>();
+        HashMap<String, Double> hashMap = new HashMap<>();
+
+        hashMap.put("Advjava", 99.9);
+
+        GenericClassTwoParam<String, String> myMap = new GenericClassTwoParam<>("generic", "awesome");
     }
 }
