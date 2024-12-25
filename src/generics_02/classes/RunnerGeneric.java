@@ -1,6 +1,5 @@
-package generics_02;
+package generics_02.classes;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class RunnerGeneric {

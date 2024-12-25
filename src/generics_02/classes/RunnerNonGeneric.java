@@ -1,4 +1,4 @@
-package generics_02;
+package generics_02.classes;
 
 public class RunnerNonGeneric {
     public static void main(String[] args) {
