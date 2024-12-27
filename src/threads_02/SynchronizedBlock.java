@@ -36,7 +36,6 @@ public class SynchronizedBlock {
         }
 
         long finishTime = System.currentTimeMillis();
-
         System.out.println("Time it took to finish taks: " + (finishTime - startTime) + " ms.");
     }
 }
