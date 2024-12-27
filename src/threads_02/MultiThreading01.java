@@ -50,6 +50,7 @@ public class MultiThreading01 {
 }
 
 class Counter {
+
     public String name;
 
     public Counter(String name) {
@@ -69,6 +70,7 @@ class Counter {
 }
 
 class CounterThread extends Thread {
+
     public String name;
 
     public CounterThread(String name) {
