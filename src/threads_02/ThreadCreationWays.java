@@ -19,7 +19,7 @@ public class ThreadCreationWays {
         Thread thread2 = new Thread(runnable);
         thread2.start();
 
-//        Second approach
+//        Another approach
         Thread thread3 = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -36,7 +36,7 @@ public class ThreadCreationWays {
         });
         thread3.start();
 
-//        Third approach
+//        Another approach
         Thread thread4 = new Thread(() -> {
 //            Here's the body of the run()
             System.out.println("Working Thread: " + Thread.currentThread().getName());
