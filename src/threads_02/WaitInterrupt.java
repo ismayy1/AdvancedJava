@@ -1,5 +1,7 @@
 package threads_02;
 
+// In MultiThread application, if the thread needs another thread to do some work in order to continue with this task
+// then, this communication between threads can be established with wait() / notify() or wait() / interrupt()
 public class WaitInterrupt {
 
 
@@ -21,7 +23,7 @@ public class WaitInterrupt {
                 wait();
                 // Temporarily releases the monitored obj until notify() method is called
             } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+                System.out.println("Balance updated. Continuing withdrawal.");
             }
         }
 
@@ -49,6 +51,9 @@ public class WaitInterrupt {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
+            obj.deposit(1500);
+            consumerThread.interrupt();
+//            Forcefully interrupts the waiting process of consumerThread
         });
         producerThread.setName("Producer");
         producerThread.start();
